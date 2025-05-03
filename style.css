@@ -1,1 +1,153 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height:100vh;
+}
 
+.grid-container{
+    margin-top: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 4fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: aqua;
+}
+#top{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+#bottom{
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.dashboard{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #000000ea;
+}
+.main-content{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group {
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 50vw; /* Or whatever fits your design */
+    margin-right: 20px;
+  }
+  
+  input[type="search"] {
+    width: 100%;
+    padding: 16px 12px 8px;
+    border: 3px solid #000000;  /* Light pink/red border */
+    border-radius: 25px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  input[type="search"]::placeholder {
+    color: transparent;
+  }
+  
+  label {
+    position: absolute;
+    top: 13px;
+    left: 42px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* match your background */
+    padding: 0 4px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 30px;
+    font-size: 16px;
+    color: #000000;
+  }
+  button img {
+
+    width: 20px;
+    height:auto;
+  }
+ #top button{
+    border: none;
+    border-radius: 50px;
+ }
+ #bell{
+    width: 20px;
+    height: auto;
+
+ }
+ #profile{
+    width: 40px;
+    height: auto;
+    border: #ffffff;
+    border-style: none;
+    border-radius: 50px;
+ }
+ 
+#profile-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+#bottom button{
+    padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5c76;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+#bottom button:hover{
+    background-color: #ff3a5a;
+
+}
+#bottom #profile-group{
+    justify-self: flex-start;
+    padding-left: 20px;
+}

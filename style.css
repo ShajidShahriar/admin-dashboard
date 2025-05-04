@@ -10,7 +10,7 @@ body{
     display: grid;
     gap: 15px;
     grid-template-columns:1fr 4fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .header{
@@ -20,6 +20,7 @@ body{
     flex-direction: column;
     gap: 20px;
     background-color: aqua;
+    max-height: 150px;
 }
 #top{
     display: grid;
@@ -41,6 +42,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
 }
 .dashboard{
     grid-column: 1/2;
@@ -150,4 +152,70 @@ body{
 #bottom #profile-group{
     justify-self: flex-start;
     padding-left: 20px;
+}
+#card {
+  background-color: #ff5c76;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ← KEY */
+  align-items: flex-start; /* aligns text on left */
+  padding: 20px;
+  height: 200px; /* or auto with min-height */
+  position: relative; /* in case you want absolute later */
+}
+
+
+#icon-container{
+  display: flex;
+  width: 100%;
+  justify-content:flex-end;
+}
+#card-icons{
+  display: flex;
+  justify-content:center;
+  
+
+}
+#card-icons img{
+  width: 20px;
+  min-height: auto;
+
+}
+.announcement{
+  display: flex;
+  flex-direction: column;
+}
+.announcement .card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color:antiquewhite;
+  border-radius: 20px;
+  padding-left: 20px;
+
+  
+}
+.announcement-item{
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  
+}
+.announcement-item:last-child{
+  border-bottom: none;
+}
+#trending{
+  display: flex;
+  flex-direction: column;
+}
+#people-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap:8px ;
+  background-color: antiquewhite;
+  border-radius: 20px;
 }

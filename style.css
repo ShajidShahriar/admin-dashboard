@@ -79,8 +79,8 @@ body {
   flex-direction: column;
   gap: 20px;
   color: white;
-  background: #3F5EFB;
-background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 98%);
+  background-color: #15181b;
+  
 }
 
 .dashboard>* {
@@ -214,14 +214,15 @@ button img {
   background: #d600ab;
   background: linear-gradient(119deg, rgba(214, 0, 171, 1) 18%, rgba(237, 221, 83, 1) 95%);
   border-radius: 20px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* ← KEY */
   align-items: flex-start;
   /* aligns text on left */
-  padding: 20px;
-  height: 200px;
+  padding: 30px;
+  height: 250px;
   /* or auto with min-height */
   position: relative;
   /* in case you want absolute later */
@@ -260,10 +261,11 @@ button img {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: antiquewhite;
+  background-color: #273139;
   border-radius: 20px;
   padding-left: 20px;
   max-width: 250px;
+  padding-bottom: 10px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
 
@@ -282,6 +284,7 @@ button img {
 
 .trending {
   padding-right: 20px;
+  padding-top: 85px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -294,12 +297,12 @@ button img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
-  gap: 8px;
-  background-color: antiquewhite;
+  gap: 15px;
+  background-color: #273139;
   border-radius: 20px;
   align-items: flex-start;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
@@ -312,4 +315,12 @@ button img {
 
 #middle h3 {
   padding-left: 22px;
+}
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 0.8em;
+  padding-left: 20px;
+  padding-right: 10px;
 }

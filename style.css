@@ -275,6 +275,9 @@ input:not(:placeholder-shown)+label {
   flex-direction: column;
   gap: 15px;
 }
+.announcement h4{
+  padding-left: 20px;
+}
 
 .announcement .card {
   display: flex;

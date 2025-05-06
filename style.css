@@ -111,18 +111,19 @@ body {
 
 input[type="search"] {
   width: 100%;
-  padding: 16px 12px 8px;
-  border: 3px solid #000000;
-  /* Light pink/red border */
-  border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 999px; /* max roundness = pill shape */
+  background-color: #15181b;
+  color: #f9fcff;
+  border: 2px solid black;
   font-size: 16px;
-  background: transparent;
-  color: white;
   outline: none;
 }
 
 input[type="search"]::placeholder {
-  color: transparent;
+  color :transparent;
+  
+  
 }
 
 label {
@@ -324,3 +325,21 @@ p {
   padding-left: 20px;
   padding-right: 10px;
 }
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard-item img {
+  width: 30px;  
+  height: 30px;
+  
+}
+.dashboard h1 img {
+  width: 52px;
+  height: 52px;
+}
+.dashboard-item img {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(100%) saturate(6868%) hue-rotate(355deg) brightness(103%) contrast(106%);
+}
+

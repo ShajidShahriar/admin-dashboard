@@ -105,16 +105,17 @@ body {
   display: flex;
   gap: 10px;
   width: 50vw;
-  /* Or whatever fits your design */
   margin-right: 20px;
+  height: 100%;
+  
 }
 
 input[type="search"] {
   width: 100%;
   padding: 10px 20px;
   border-radius: 999px; /* max roundness = pill shape */
-  background-color: #15181b;
-  color: #f9fcff;
+  background-color:transparent;
+  color: #000000;
   border: 2px solid black;
   font-size: 16px;
   outline: none;
@@ -128,11 +129,12 @@ input[type="search"]::placeholder {
 
 label {
   position: absolute;
-  top: 13px;
+  top: 12px;
   left: 42px;
+  border-radius: 999px;
   font-size: 16px;
   color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  background-color:rgb(239, 232, 24);
   /* match your background */
   padding: 0 4px;
   transition: 0.2s ease all;
@@ -142,17 +144,34 @@ label {
 input:focus+label,
 input:not(:placeholder-shown)+label {
   top: -10px;
-  left: 30px;
+  left: 38px;
   font-size: 16px;
   color: #000000;
 }
 
-button img {
-
-  width: 20px;
-  height: 20px;
+/* new, clean button */
+.form-group button{
+  background:#273139;           /* white pops on yellow */
+  border:none;
+  border-radius:0 32px 32px 0;  /* right half of the pill */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
 }
 
+/* give the SVG a consistent size */
+.form-group button img{
+  width:30px;
+  height:20px;
+  filter:invert(1);             /* keep it black; flip to 1 if your SVG is white */
+}
+
+/* optional hover tweak */
+.form-group button:hover{
+   background: linear-gradient(119deg, rgba(214, 0, 171, 1) 18%, rgba(237, 221, 83, 1) 95%);
+
+}
 #top button {
   border: none;
   border-radius: 50px;
